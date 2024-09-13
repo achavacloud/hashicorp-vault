@@ -1,4 +1,11 @@
-# main.tf
+terraform {
+  required_providers {
+    hcp = {
+      source  = "hashicorp/hcp"
+      version = "~> 0.33.0"
+    }
+  }
+}
 
 resource "hcp_hvn" "this" {
   hvn_id         = var.hvn_id

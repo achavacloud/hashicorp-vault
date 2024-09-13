@@ -1,5 +1,3 @@
-# outputs.tf
-
 output "vault_cluster_id" {
   description = "The ID of the Vault cluster"
   value       = hcp_vault_cluster.this.id
