@@ -5,7 +5,6 @@ terraform {
       version = "~> 0.33.0"
     }
   }
-  backend "remote" {}
 }
 
 resource "hcp_hvn" "this" {
